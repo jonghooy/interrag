@@ -17,8 +17,9 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 import pytz
 import sys
 
-# 현재 디렉토리를 Python 경로에 추가
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# 현재 디렉토리를 Python 경로에 명시적으로 추가
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, current_dir)
 
 # 환경 변수 로드
 load_dotenv()
