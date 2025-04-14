@@ -10,6 +10,18 @@ import tiktoken
 import pandas as pd
 import json # LLM 응답 파싱용 (필요시 대비)
 import re # load_template_dataframe 내에서 사용
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_community.vectorstores import FAISS
+from langchain.chains import RetrievalQA
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+import pytz
+import sys
+
+# 현재 디렉토리를 Python 경로에 추가
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+# 환경 변수 로드
+load_dotenv()
 
 # 유틸리티 함수 임포트 (utils.py 파일이 필요합니다)
 try:
