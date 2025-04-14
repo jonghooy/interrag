@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FAQ 검색 및 문의 요약 시스템
 
 LangChain과 Streamlit을 사용하여 FAQ 검색 및 문의 요약을 자동화하는 시스템입니다.
@@ -114,3 +115,6 @@ MIT License
 ## 문의
 
 - GitHub Issues: [https://github.com/jonghooy/interrag/issues](https://github.com/jonghooy/interrag/issues) 
+=======
+# interrag
+>>>>>>> 9a406b3bd08595b33327b102bb03d71c496c8f71
