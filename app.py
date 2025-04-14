@@ -16,6 +16,8 @@ from langchain.chains import RetrievalQA
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import pytz
 import sys
+from sentence_transformers import SentenceTransformer
+import faiss
 
 # 현재 디렉토리를 Python 경로에 명시적으로 추가
 current_dir = os.path.dirname(os.path.abspath(__file__))
